@@ -180,7 +180,7 @@ var view = {
   setUpEventListeners: function () {
     var toDosUl = document.querySelector('ul');
     //////higherOrderFunction/////////callBackFunction ---- EVENT DELAGATION --- to the parent 
-    toDosUl.addEventListener('click', function (envent) {
+    toDosUl.addEventListener('click', function (event) {
       //console.log(event(OBJECT).target.parentNode.id);
 
       //get element that was clicked on
