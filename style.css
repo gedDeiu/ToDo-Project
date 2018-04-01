@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(80, 111, 143);
+  font-size: 1.8rem;
+}
+
+input {
+  padding: 6px 10px;
+  box-shadow: 2px 2px 10px black;
+  border: 0;
+  vertical-align: top;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px rgba(224, 255, 255, 0.226);
+}
+
+h1 {
+  margin: 0.8;
+  color: whitesmoke;
+  font-family: Ubuntu, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif
+}
+
+.mainContainer {
+  display: -webkit-flex;
+  display: flex;
+  min-width: 320px;
+  width: 1080px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputDiv {
+  margin: 6px 0;
+}
+
+.row {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.line {
+  margin: 0 0 6px 0;
+}
+
+.btn {
+  display: inline-block;
+  width: 180px;
+  font-size: 1.2rem;
+  background-color: aliceblue;
+  border: 0;
+  box-shadow: 2px 2px 10px black;
+  padding: 2px;
+  vertical-align: top;
+  margin-top: 1.1px;
+  height: 27.33px;
+}
+
+.btn:hover {
+  background-color: indigo;
+  cursor: pointer;
+  color : rgb(149, 177, 204);
+}
+
+.label {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  text-align: right;
+  color: whitesmoke;
+  font-family: Ubuntu, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+.input-container {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+}
+
+.numInput-small {
+  width: 18%;
+  max-width: 72px;
+  min-width: 40px;
+}
+
+.input-change {
+  width: 80%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+/****** TOGGLES ******/
+
+.toggles {
+  min-width: 320px;
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toDos {
+  min-width: 320px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* ToDo CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  list-style-type: none;
+}
+
+.listCard {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  width: 180px;
+  height: 180px;
+  margin: 6px;
+  border: 1px solid #ccc;
+  font-size: 1.4rem;
+  background-color: rgb(235, 226, 194);
+}
+
+.cardHeader {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  top: 0;
+  font-size: 1.4rem;
+  color: rgb(32, 48, 145);
+  font-weight: 700;
+}
+
+.cardContent {
+  margin: 1.8rem 0;
+  padding: 4px 1.2rem;
+  border-top: 1px solid rgba(152, 153, 158, 0.61);
+}
+
+.deleteButton {
+  right: 0;
+  padding-right: 4px;
+  font-size: 1.6rem;
+}
+
+.deleteButton:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.toDoIndex {
+  left: 0;
+  padding: 4px;
+}
+
+.completed {
+  box-shadow: -2px -2px 10px 0px rgba(44, 218, 29, 0.7);
+}
+
+.uncompleted {
+  box-shadow: -6px -6px 10px 0px rgba(189, 104, 8, 0.9);
+}

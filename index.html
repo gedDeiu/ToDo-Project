@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=greek-ext" rel="stylesheet">
+
+  <title>To Do list</title>
+</head>
+
+<body>
+
+
+  <main class="mainContainer">
+    <div class="heading">
+      <h1>Todo List</h1>
+    </div>
+
+    <div class="row">
+      <!-- ADDD -->
+      <div class="add line">
+        <label class="label">
+          New Todo:
+        </label>
+        <div class="input-container">
+          <input id="addToDoTextInput" class="input w-100" type="text" placeholder="Insert new Todo">
+        </div>
+        <button class="btn" onclick="handlers.addToDo()">Add</button>
+      </div>
+      <!-- CHANGE -->
+      <div class="change line">
+        <label class="label" for="changeToDoPosition">Todo Index:</label>
+        <div class="input-container">
+          <input id="changeToDoPosition" class="numInput-small" type="number">
+          <input id="changeToDoText" class="input-change" type="text" placeholder="Update Todo">
+        </div>
+        <button class="btn" onclick="handlers.changeToDo()">Change </button>
+      </div>
+      <!-- COMPLETE -->
+      <div class="complete line">
+        <label class="label" for="completeToDoPosition">Todo Index:</label>
+        <div class="input-container">
+          <input id="completeToDoPosition" class="numInput-small" type="number">
+        </div>
+        <button class="btn" onclick="handlers.completeToDo()">Complete </button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <section class="toggles">
+    <div class="toggleAll line">
+      <button class="btn" onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+    <div class="clearAll line">
+      <button class="btn" onclick="handlers.clearAllToDos()">Clear All Todos</button>
+    </div>
+  </section>
+
+  <section class="toDos">
+    <ul class="cards">
+    </ul>
+  </section>
+
+
+</body>
+<!-- <script src="ver2_funct_examples.js"></script> -->
+<!-- <script src="ver3_onbjs_excamples.js"></script> -->
+<!-- <script src="ver4_bool_excamples.js"></script> -->
+<!-- <script src="ver5_logic_excamples.js"></script> -->
+<!-- <script src="ver6_think_code_excamples.js"></script> -->
+<!-- <script src="ver7_into_DOM.js"></script> -->
+<!-- <script src="ver8_data_from_inputs.js"></script> -->
+<!-- <script src="ver9_console_exit.js"></script> IT ALSO HAS SOME TESTS - EXAMPLES-->
+<!-- <script src="ver10_click_delete.js"></script> -->
+<!-- <script src="ver11_forEach_implement.js"></script> -->
+<script src="ver12_styled.js"></script>
+<!-- <script src="fCC_experiments.js"></script> -->
+
+</html>
